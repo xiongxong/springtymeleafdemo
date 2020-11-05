@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1 th:text="${username}"></h1>
+<input type="text" name="names" th:value="${username}"/>
+<br>
+<em th:size="${username}"></em>
+<span th:text="'欢迎来到:'+${username}+'学习'"></span>
+
+</body>
+</html>
