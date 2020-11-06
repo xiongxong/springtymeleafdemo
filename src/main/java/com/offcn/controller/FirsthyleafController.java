@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirsthyleafController {
     @GetMapping("/first")
     public String indexPage(Model model){
+        System.out.println("/测试");
         String message="hello,中公";
         model.addAttribute("messagee",message);
         return "index";
